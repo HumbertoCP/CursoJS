@@ -18,8 +18,23 @@
     </style>
 </head>
 <body>
-    <div id="area">
+    <div id="area" onclick="clicar()" onmouseover="entrar()" onmouseout="sair()">
         Interaja...
     </div>
+
+    <script>
+        var area = window.document.getElementById('area')
+        function clicar(){
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+        function entrar(){
+            area.innerText = 'Entrou!'
+        }
+        function sair(){
+            area.innerText = 'Saiu!'
+            area.style.backgroud = 'green'
+        }
+    </script>
 </body>
 </html>
