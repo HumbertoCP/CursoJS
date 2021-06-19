@@ -1,2 +1,2 @@
 # CursoJS
-Repositório feito para armazenar códigos teste do curso de JavaScript.
+Repositório feito para armazenar códigos teste do curso de JavaScript
