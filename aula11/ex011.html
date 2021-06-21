@@ -18,12 +18,13 @@
             var nacionalidade = document.querySelector('input#nacionalidade')
             var res = document.querySelector('div#res')
 
-            var string_nacionalidade = String(nacionalidade.value)
+            var string_nacionalidade = String(nacionalidade.value).toUpperCase()
+            res.innerText = `Seu pais é ${string_nacionalidade}` 
 
             if(string_nacionalidade == 'EUA'){
                 res.innerHTML = `<p>Você é <strong>ESTADO UNIDENSE</strong></p>`
             }
-            if(string_nacionalidade == 'BR'){
+            else if(string_nacionalidade == 'BR'){
                 res.innerHTML = `<p>Você é <strong>Brasileiro!</strong></p>`
             }
             else{
